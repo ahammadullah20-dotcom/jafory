@@ -14,8 +14,12 @@ export type TrpcContext = {
 };
 
 function bearerToken(req: CreateExpressContextOptions["req"]) {
-  const value = req.headers.authorization;
-  return typeof value === "string" && value.startsWith("Bearer ") ? value.slice(7) : "";
+  const authorization = req.headers.authorization;
+  if (typeof authorization === "string" && authorization.startsWith("Bearer ")) return authorization.slice(7);
+  const forwardedAuthorization = req.headers["x-forwarded-authorization"];
+  if (typeof forwardedAuthorization === "string" && forwardedAuthorization.startsWith("Bearer ")) return forwardedAuthorization.slice(7);
+  const supabaseToken = req.headers["x-supabase-access-token"];
+  return typeof supabaseToken === "string" ? supabaseToken : "";
 }
 
 export async function createContext(opts: CreateExpressContextOptions): Promise<TrpcContext> {

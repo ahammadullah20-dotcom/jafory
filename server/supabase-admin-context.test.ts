@@ -49,4 +49,12 @@ describe("Supabase bearer role mapping", () => {
     ];
     for (const request of requests) await expect(request).rejects.toMatchObject({ code: "FORBIDDEN" });
   });
+
+  it("accepts the Supabase token when a proxy forwards it under a secondary header", async () => {
+    auth.getUserFromToken.mockResolvedValue({ id: "admin-id", email: "abdallahalmaruf@gmail.com", created_at: "2026-01-01T00:00:00.000Z" });
+    auth.getProfile.mockResolvedValue({ id: "admin-id", email: "abdallahalmaruf@gmail.com", display_name: "Admin", role: "admin" });
+    const context = await createContext({ req: { headers: { "x-supabase-access-token": "admin-access-token" } }, res: {} } as any);
+    expect(auth.getUserFromToken).toHaveBeenCalledWith("admin-access-token");
+    expect(context.user?.role).toBe("admin");
+  });
 });

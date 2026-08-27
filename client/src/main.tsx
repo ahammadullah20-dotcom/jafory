@@ -14,7 +14,7 @@ queryClient.getQueryCache().subscribe(event => { if (event.type === "updated" &&
 queryClient.getMutationCache().subscribe(event => { if (event.type === "updated" && event.action.type === "error") reportApiError(event.mutation.state.error); });
 
 const trpcClient = trpc.createClient({
-  links: [httpBatchLink({ url: "/api/trpc", transformer: superjson, async headers() { const { data } = await supabase.auth.getSession(); return data.session?.access_token ? { Authorization: `Bearer ${data.session.access_token}` } : {}; }, fetch(input, init) { return globalThis.fetch(input, { ...(init ?? {}), credentials: "include" }); } })],
+  links: [httpBatchLink({ url: "/api/trpc", transformer: superjson, async headers() { const { data } = await supabase.auth.getSession(); return data.session?.access_token ? { Authorization: `Bearer ${data.session.access_token}`, "X-Supabase-Access-Token": data.session.access_token } : {}; }, fetch(input, init) { return globalThis.fetch(input, { ...(init ?? {}), credentials: "include" }); } })],
 });
 
 createRoot(document.getElementById("root")!).render(<ErrorBoundary><trpc.Provider client={trpcClient} queryClient={queryClient}><QueryClientProvider client={queryClient}><App /></QueryClientProvider></trpc.Provider></ErrorBoundary>);
