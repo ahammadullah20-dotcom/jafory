@@ -31,7 +31,7 @@ export const canonicalStorageImages: Record<string, string | null> = {
   "dove-original-antiperspirant": "/manus-storage/expansion-61_986f6278.webp",
   "dyson-v8-cordless-vacuum": "/manus-storage/expansion-39_5e57d4b3.webp",
   "fairy-original-washing-up": "/manus-storage/expansion-08_8d862cff.webp",
-  "researched-fastai-practical-deep-learning": "/manus-storage/expansion-50_e66d1a2d.webp",
+  "researched-fastai-practical-deep-learning": "/manus-storage/fastai-practical-deep-learning_b9e0d167.jpg",
   "finish-quantum-tablets": "/manus-storage/expansion-08_8d862cff.webp",
   "researched-generative-ai-for-everyone": "/manus-storage/ai-generative-ai-everyone_c52c30bc.webp",
   "generative-ai-for-everyone-andrew-ng": "/manus-storage/ai-generative-ai-everyone_c52c30bc.webp",
@@ -63,7 +63,7 @@ export const canonicalStorageImages: Record<string, string | null> = {
   "logitech-mx-master-3s": "/manus-storage/expansion-39_5e57d4b3.webp",
   "researched-maybelline-sky-high": "/manus-storage/beauty-maybelline-sky-high_46cbde9a.webp",
   "maybelline-sky-high-mascara": "/manus-storage/beauty-maybelline-sky-high_46cbde9a.webp",
-  "researched-azure-ai-fundamentals": "/manus-storage/expansion-44_33a2736a.webp",
+  "researched-azure-ai-fundamentals": "/manus-storage/azure-ai-fundamentals_1e697d1d.png",
   "microsoft-generative-ai-beginners": "/manus-storage/ai-applied-ai-certificate_fff2603f.webp",
   "multi-layer-standing-clothes-rack": "/manus-storage/jafory-home-clothes-rack_9515679f.webp",
   "nike-air-force-1-retro": "/manus-storage/expansion-50_e66d1a2d.webp",
@@ -73,14 +73,14 @@ export const canonicalStorageImages: Record<string, string | null> = {
   "ninja-foodi-10-in-1": "/manus-storage/expansion-14_89e0d947.webp",
   "ninja-neverstick-cookware": "/manus-storage/expansion-08_8d862cff.webp",
   "researched-ninja-foodi-power-blender": "/manus-storage/jafory-home-bayti-round-box_5c1a5ab9.webp",
-  "nivea-creme-tin": "/manus-storage/expansion-28_80684137.webp",
+  "nivea-creme-tin": "/manus-storage/nivea-creme-tin_9d97842e.jpg",
   "nivea-men-sensitive-kit": "/manus-storage/expansion-28_80684137.webp",
   "researched-nivea-sun-spf50": "/manus-storage/expansion-28_80684137.webp",
-  "researched-nvidia-dli-generative-ai": "/manus-storage/ai-nvidia-dli_2d55ae55.webp",
+  "researched-nvidia-dli-generative-ai": "/manus-storage/nvidia-generative-ai_5686ad5f.jpg",
   "nvidia-generative-ai-explained": "/manus-storage/ai-nvidia-dli_2d55ae55.webp",
-  "openai-academy-learning": "/manus-storage/ai-applied-ai-certificate_fff2603f.webp",
-  "oral-b-io-electric-toothbrush": "/manus-storage/expansion-41_569dec3a.webp",
-  "oral-b-pro-3": "/manus-storage/expansion-41_569dec3a.webp",
+  "openai-academy-learning": "/manus-storage/openai-academy_1e9683f3.png",
+  "oral-b-io-electric-toothbrush": "/manus-storage/oral-b-pro-3_3962f519.jpg",
+  "oral-b-pro-3": "/manus-storage/oral-b-pro-3_3962f519.jpg",
   "pealwel-mini-backpack-purse": "/manus-storage/jafory-fashion-drawstring-backpack_b2775f1b.webp",
   "researched-philips-dual-basket-airfryer": "/manus-storage/home-philips-dual-airfryer_4eb66c4b.webp",
   "researched-philips-5000-rice-cooker": "/manus-storage/home-philips-rice-cooker_5e30977c.webp",
@@ -109,8 +109,8 @@ export const canonicalStorageImages: Record<string, string | null> = {
   "researched-ugreen-nexode-air-65w": "/manus-storage/electronics-ugreen-65w_056e2d29.webp",
   "uniqlo-round-mini-shoulder": "/manus-storage/expansion-11_ed9d9fe8.webp",
   "researched-uniqlo-round-mini-shoulder": "/manus-storage/jafory-fashion-wanam-backpack_b1f37759.webp",
-  "vaseline-advanced-repair": "/manus-storage/expansion-61_986f6278.webp",
-  "vaseline-petroleum-jelly": "/manus-storage/expansion-61_986f6278.webp",
+  "vaseline-advanced-repair": "/manus-storage/vaseline-petroleum-jelly_ef8d4e84.jpeg",
+  "vaseline-petroleum-jelly": "/manus-storage/vaseline-petroleum-jelly_ef8d4e84.jpeg",
   "wanam-waterproof-nylon-backpack": "/manus-storage/jafory-fashion-wanam-backpack_b1f37759.webp",
   "wavytalk-titanium-hair-straightener": "/manus-storage/jafory-beauty-hair-tools-bag_32d0c8d1.webp",
   "xiaomi-redmi-buds-6": "/manus-storage/expansion-16_9a443884.webp",
@@ -119,9 +119,9 @@ export const canonicalStorageImages: Record<string, string | null> = {
   "zara-fabric-shoulder-shopper": "/manus-storage/expansion-11_ed9d9fe8.webp",
 };
 
-/** Converts the preserved pre-package media map into a public Netlify path. */
-export const toNetlifyMediaPath = (value: string | null | undefined) =>
-  value?.startsWith("/manus-storage/") ? value.replace("/manus-storage/", "/jafory-media/") : value ?? null;
+/** Converts preserved package media while keeping durable correction assets at their exact uploaded paths. */
+const durableCorrectionMedia = new Set(["/manus-storage/azure-ai-fundamentals_1e697d1d.png", "/manus-storage/fastai-practical-deep-learning_b9e0d167.jpg", "/manus-storage/nvidia-generative-ai_5686ad5f.jpg", "/manus-storage/openai-academy_1e9683f3.png", "/manus-storage/nivea-creme-tin_9d97842e.jpg", "/manus-storage/oral-b-pro-3_3962f519.jpg", "/manus-storage/vaseline-petroleum-jelly_ef8d4e84.jpeg"]);
+export const toNetlifyMediaPath = (value: string | null | undefined) => value?.startsWith("/manus-storage/") && !durableCorrectionMedia.has(value) ? value.replace("/manus-storage/", "/jafory-media/") : value ?? null;
 
 /** Rejects preview-only media while allowing durable Supabase Storage URLs set by protected administration. */
 export const safePublicMediaUrl = (value: unknown) => {

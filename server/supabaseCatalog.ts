@@ -2,7 +2,7 @@ import { supabaseAdmin, hasSupabaseConfig } from "./supabase";
 import { canonicalProductSlugs } from "@shared/canonicalCatalog";
 import { canonicalStorageImages, safePublicMediaUrl, toNetlifyMediaPath } from "@shared/storageImageMap";
 const mapCategory = (row: any) => ({ id: String(row.id), slug: row.slug, nameEn: row.name_en, nameAr: row.name_ar, nameBn: row.name_bn, descriptionEn: row.description_en, descriptionAr: row.description_ar, descriptionBn: row.description_bn, imageUrl: safePublicMediaUrl(row.image_url), accentColor: row.accent_color, sortOrder: row.sort_order, isActive: row.is_active ? 1 : 0 });
-const isCategorySafeMedia = (url: string | null) => Boolean(url && /^\/jafory-media\//i.test(url));
+const isCategorySafeMedia = (url: string | null) => Boolean(url && /^\/(?:jafory-media|manus-storage)\//i.test(url));
 const fallbackMediaByCategorySlug: Record<string, string> = {
   electronics: "/jafory-media/electronics-anker-737_4fb124c7.webp",
   fashion: "/jafory-media/jafory-fashion-kalidi-tote_aada0356.webp",
