@@ -10,8 +10,8 @@ describe("phone layout detection", () => {
     expect(isPhoneUserAgent("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36")).toBe(false);
   });
 
-  it("keeps a requested desktop-width browser in the desktop shell even when a phone user agent and touch pointer remain visible", () => {
-    expect(isPhoneLikeDevice({ compactViewport: false, phoneUserAgent: true, coarsePointer: true, touchPoints: 5 })).toBe(false);
+  it("keeps a touch-capable phone in the compact shell when it requests desktop-width content", () => {
+    expect(isPhoneLikeDevice({ compactViewport: false, phoneUserAgent: true, coarsePointer: true, touchPoints: 5 })).toBe(true);
     expect(isPhoneLikeDevice({ compactViewport: false, phoneUserAgent: false, coarsePointer: false, touchPoints: 0 })).toBe(false);
   });
 

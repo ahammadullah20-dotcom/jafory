@@ -9,9 +9,10 @@ export function isPhoneUserAgent(userAgent: string) {
 }
 
 export function isPhoneLikeDevice({ compactViewport, phoneUserAgent, coarsePointer, touchPoints }: { compactViewport: boolean; phoneUserAgent: boolean; coarsePointer: boolean; touchPoints: number }) {
-  // Desktop-site mode on a phone keeps a phone user agent but provides a wide
-  // viewport. Viewport width is therefore the only reliable compact-shell cue.
-  return compactViewport;
+  // A phone requesting Desktop site may expose a wide viewport and sometimes a
+  // desktop UA. Preserve the compact shell when touch-capable hardware still
+  // identifies the device as a phone; a monitor remains desktop by default.
+  return compactViewport || (phoneUserAgent && (coarsePointer || touchPoints > 0)) || (coarsePointer && touchPoints > 0);
 }
 
 function getMediaQueryList(query: string): LegacyMediaQueryList | null {
