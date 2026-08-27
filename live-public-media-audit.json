@@ -1,0 +1,412 @@
+{
+  "total": 118,
+  "imageUrlPresent": 37,
+  "missingImageUrl": 81,
+  "unresolved": [
+    {
+      "category": "electronics",
+      "slug": "anker-soundcore-bluetooth-speaker",
+      "name": "Anker Soundcore Bluetooth Speaker"
+    },
+    {
+      "category": "electronics",
+      "slug": "anker-soundcore-life-q20",
+      "name": "Anker Soundcore Life Q20 Headphones"
+    },
+    {
+      "category": "electronics",
+      "slug": "apple-airtag-4-pack",
+      "name": "Apple AirTag 4 Pack"
+    },
+    {
+      "category": "electronics",
+      "slug": "apple-ipad-10th-gen",
+      "name": "Apple iPad 10th Generation"
+    },
+    {
+      "category": "electronics",
+      "slug": "belkin-boostcharge-usb-c",
+      "name": "Belkin BoostCharge USB-C Charger"
+    },
+    {
+      "category": "electronics",
+      "slug": "jbl-flip-6",
+      "name": "JBL Flip 6 Portable Bluetooth Speaker"
+    },
+    {
+      "category": "electronics",
+      "slug": "jononser-magnetic-magsafe-car-mount",
+      "name": "Jononser Magnetic MagSafe Car Mount"
+    },
+    {
+      "category": "electronics",
+      "slug": "lamicall-15w-magsafe-car-mount-charger",
+      "name": "Lamicall 15W MagSafe Car Mount Charger"
+    },
+    {
+      "category": "electronics",
+      "slug": "logitech-mx-master-3s",
+      "name": "Logitech MX Master 3S Mouse"
+    },
+    {
+      "category": "electronics",
+      "slug": "samsung-galaxy-tab-s10-fe",
+      "name": "Samsung Galaxy Tab S10 FE"
+    },
+    {
+      "category": "electronics",
+      "slug": "samsung-galaxy-watch-8",
+      "name": "Samsung Galaxy Watch 8"
+    },
+    {
+      "category": "electronics",
+      "slug": "sony-wh-1000xm5",
+      "name": "Sony WH-1000XM5 Wireless Headphones"
+    },
+    {
+      "category": "electronics",
+      "slug": "tp-link-archer-ax55",
+      "name": "TP-Link Archer AX55 Wi-Fi Router"
+    },
+    {
+      "category": "electronics",
+      "slug": "xiaomi-redmi-buds-6",
+      "name": "Xiaomi Redmi Buds 6"
+    },
+    {
+      "category": "fashion",
+      "slug": "adidas-samba-indoor",
+      "name": "adidas Samba Indoor Shoes"
+    },
+    {
+      "category": "fashion",
+      "slug": "crocs-classic-clog",
+      "name": "Crocs Classic Clog"
+    },
+    {
+      "category": "fashion",
+      "slug": "researched-herschel-little-america",
+      "name": "Herschel Little America Backpack"
+    },
+    {
+      "category": "fashion",
+      "slug": "hgwssy-convertible-fashion-backpack-purse",
+      "name": "HGWSSY Convertible Fashion Backpack Purse"
+    },
+    {
+      "category": "fashion",
+      "slug": "levis-501-original-jeans",
+      "name": "Levi’s 501 Original Jeans"
+    },
+    {
+      "category": "fashion",
+      "slug": "levis-crocs-all-terrain",
+      "name": "Levi’s x Crocs All-Terrain Clog"
+    },
+    {
+      "category": "fashion",
+      "slug": "nike-air-force-1-retro",
+      "name": "Nike Air Force 1 Retro Shoes"
+    },
+    {
+      "category": "fashion",
+      "slug": "nike-calm-slide",
+      "name": "Nike Calm Slide Sandals"
+    },
+    {
+      "category": "fashion",
+      "slug": "nike-reactx-rejuven8",
+      "name": "Nike ReactX Rejuven8 Shoes"
+    },
+    {
+      "category": "fashion",
+      "slug": "researched-nike-revolution-7",
+      "name": "Nike Revolution 7"
+    },
+    {
+      "category": "fashion",
+      "slug": "pealwel-mini-backpack-purse",
+      "name": "Pealwel Mini Nylon Backpack Purse"
+    },
+    {
+      "category": "fashion",
+      "slug": "ray-ban-aviator-classic",
+      "name": "Ray-Ban Aviator Classic Sunglasses"
+    },
+    {
+      "category": "fashion",
+      "slug": "researched-samsonite-c-lite-spinner",
+      "name": "Samsonite C-Lite Large Spinner"
+    },
+    {
+      "category": "fashion",
+      "slug": "researched-tumi-alpha-3-carry-on",
+      "name": "TUMI Alpha 3 International Expandable Carry-On"
+    },
+    {
+      "category": "fashion",
+      "slug": "uniqlo-round-mini-shoulder",
+      "name": "Uniqlo Round Mini Shoulder Bag"
+    },
+    {
+      "category": "fashion",
+      "slug": "researched-uniqlo-round-mini-shoulder",
+      "name": "UNIQLO Round Mini Shoulder Bag"
+    },
+    {
+      "category": "fashion",
+      "slug": "zara-fabric-shoulder-shopper",
+      "name": "Zara Fabric Shoulder Shopper Bag"
+    },
+    {
+      "category": "home-living",
+      "slug": "dyson-v8-cordless-vacuum",
+      "name": "Dyson V8 Cordless Vacuum"
+    },
+    {
+      "category": "home-living",
+      "slug": "researched-ikea-365-food-container",
+      "name": "IKEA 365+ Food Container with Lid"
+    },
+    {
+      "category": "home-living",
+      "slug": "ikea-365-pressure-cooker",
+      "name": "IKEA 365+ Pressure Cooker"
+    },
+    {
+      "category": "home-living",
+      "slug": "researched-ikea-kallax-shelving",
+      "name": "IKEA KALLAX Shelving Unit"
+    },
+    {
+      "category": "home-living",
+      "slug": "ninja-foodi-10-in-1",
+      "name": "Ninja Foodi 10-in-1 Pressure Cooker"
+    },
+    {
+      "category": "home-living",
+      "slug": "ninja-neverstick-cookware",
+      "name": "Ninja Foodi NeverStick Cookware Set"
+    },
+    {
+      "category": "home-living",
+      "slug": "researched-ninja-foodi-power-blender",
+      "name": "Ninja SS351 Foodi Power Blender & Processor System"
+    },
+    {
+      "category": "home-living",
+      "slug": "researched-philips-dual-basket-airfryer",
+      "name": "Philips 3000 Series Dual Basket Airfryer NA351/00"
+    },
+    {
+      "category": "home-living",
+      "slug": "researched-philips-5000-rice-cooker",
+      "name": "Philips 5000 Series Digital Rice Cooker"
+    },
+    {
+      "category": "home-living",
+      "slug": "tichondrius-16a-wifi-smart-plug-4-pack",
+      "name": "Tichondrius 16A WiFi Smart Plug (4 Pack)"
+    },
+    {
+      "category": "home-living",
+      "slug": "ywleto-hanging-fruit-basket",
+      "name": "YWLETO Hanging Fruit Basket"
+    },
+    {
+      "category": "beauty-wellness",
+      "slug": "cerave-foaming-cleanser",
+      "name": "CeraVe Foaming Facial Cleanser"
+    },
+    {
+      "category": "beauty-wellness",
+      "slug": "researched-cerave-hydrating-cleanser",
+      "name": "CeraVe Hydrating Facial Cleanser"
+    },
+    {
+      "category": "beauty-wellness",
+      "slug": "researched-lrp-anthelios-uvmune",
+      "name": "La Roche-Posay Anthelios UVMune 400 SPF50+"
+    },
+    {
+      "category": "beauty-wellness",
+      "slug": "large-marble-hair-clips",
+      "name": "Large Marble-Style Hair Clips"
+    },
+    {
+      "category": "beauty-wellness",
+      "slug": "researched-maybelline-sky-high",
+      "name": "Maybelline Lash Sensational Sky High Mascara"
+    },
+    {
+      "category": "beauty-wellness",
+      "slug": "nivea-men-sensitive-kit",
+      "name": "Nivea Men Sensitive Shaving Kit"
+    },
+    {
+      "category": "beauty-wellness",
+      "slug": "oral-b-io-electric-toothbrush",
+      "name": "Oral-B iO Series Electric Toothbrush"
+    },
+    {
+      "category": "beauty-wellness",
+      "slug": "researched-philips-oneblade-360",
+      "name": "Philips Norelco OneBlade 360"
+    },
+    {
+      "category": "beauty-wellness",
+      "slug": "portable-hair-tools-travel-bag",
+      "name": "Portable Hair Tools Travel Bag"
+    },
+    {
+      "category": "beauty-wellness",
+      "slug": "researched-ordinary-niacinamide-zinc",
+      "name": "The Ordinary Niacinamide 10% + Zinc 1%"
+    },
+    {
+      "category": "beauty-wellness",
+      "slug": "travel-cosmetic-organizer-pouch",
+      "name": "Travel Cosmetic Organizer Pouch"
+    },
+    {
+      "category": "beauty-wellness",
+      "slug": "vaseline-advanced-repair",
+      "name": "Vaseline Intensive Care Advanced Repair Lotion"
+    },
+    {
+      "category": "daily-essentials",
+      "slug": "researched-ariel-ultra-concentrado",
+      "name": "Ariel Ultra Concentrado Laundry Detergent"
+    },
+    {
+      "category": "daily-essentials",
+      "slug": "researched-colgate-total-whitening",
+      "name": "Colgate Total Whitening Toothpaste"
+    },
+    {
+      "category": "daily-essentials",
+      "slug": "researched-dettol-antiseptic-liquid",
+      "name": "Dettol Antiseptic Liquid"
+    },
+    {
+      "category": "daily-essentials",
+      "slug": "dove-beauty-bar",
+      "name": "Dove Beauty Bar"
+    },
+    {
+      "category": "daily-essentials",
+      "slug": "researched-dove-deeply-nourishing-body-wash",
+      "name": "Dove Deeply Nourishing Body Wash"
+    },
+    {
+      "category": "daily-essentials",
+      "slug": "fairy-original-washing-up",
+      "name": "Fairy Original Washing-Up Liquid"
+    },
+    {
+      "category": "daily-essentials",
+      "slug": "finish-quantum-tablets",
+      "name": "Finish Quantum Dishwasher Tablets"
+    },
+    {
+      "category": "daily-essentials",
+      "slug": "head-shoulders-classic-clean",
+      "name": "Head & Shoulders Classic Clean Shampoo"
+    },
+    {
+      "category": "daily-essentials",
+      "slug": "kleenex-balsam-tissues",
+      "name": "Kleenex Balsam Tissues"
+    },
+    {
+      "category": "daily-essentials",
+      "slug": "listerine-cool-mint",
+      "name": "Listerine Cool Mint Mouthwash"
+    },
+    {
+      "category": "daily-essentials",
+      "slug": "nivea-creme-tin",
+      "name": "Nivea Creme Tin"
+    },
+    {
+      "category": "daily-essentials",
+      "slug": "researched-nivea-sun-spf50",
+      "name": "NIVEA Sun Protect & Moisture SPF50+"
+    },
+    {
+      "category": "daily-essentials",
+      "slug": "oral-b-pro-3",
+      "name": "Oral-B Pro-3 Electric Toothbrush"
+    },
+    {
+      "category": "daily-essentials",
+      "slug": "tide-hygienic-clean",
+      "name": "Tide Hygienic Clean Liquid Detergent"
+    },
+    {
+      "category": "daily-essentials",
+      "slug": "vaseline-petroleum-jelly",
+      "name": "Vaseline Petroleum Jelly"
+    },
+    {
+      "category": "ai-learn-ai-tech",
+      "slug": "ai-for-everyone-andrew-ng",
+      "name": "AI For Everyone — Andrew Ng"
+    },
+    {
+      "category": "ai-learn-ai-tech",
+      "slug": "researched-coursera-applied-ai",
+      "name": "Applied AI Professional Certificate"
+    },
+    {
+      "category": "ai-learn-ai-tech",
+      "slug": "researched-aws-ai-ml-learning",
+      "name": "AWS AI and Machine Learning Learning Plan"
+    },
+    {
+      "category": "ai-learn-ai-tech",
+      "slug": "researched-datacamp-generative-ai-concepts",
+      "name": "DataCamp Generative AI Concepts"
+    },
+    {
+      "category": "ai-learn-ai-tech",
+      "slug": "researched-fastai-practical-deep-learning",
+      "name": "fast.ai Practical Deep Learning for Coders"
+    },
+    {
+      "category": "ai-learn-ai-tech",
+      "slug": "researched-generative-ai-for-everyone",
+      "name": "Generative AI for Everyone"
+    },
+    {
+      "category": "ai-learn-ai-tech",
+      "slug": "generative-ai-for-everyone-andrew-ng",
+      "name": "Generative AI for Everyone — Andrew Ng"
+    },
+    {
+      "category": "ai-learn-ai-tech",
+      "slug": "researched-google-ai-essentials",
+      "name": "Google AI Essentials"
+    },
+    {
+      "category": "ai-learn-ai-tech",
+      "slug": "researched-google-cloud-generative-ai-path",
+      "name": "Google Cloud Generative AI Learning Path"
+    },
+    {
+      "category": "ai-learn-ai-tech",
+      "slug": "researched-ibm-ai-engineering",
+      "name": "IBM AI Engineering Professional Certificate"
+    },
+    {
+      "category": "ai-learn-ai-tech",
+      "slug": "researched-azure-ai-fundamentals",
+      "name": "Microsoft Azure AI Fundamentals"
+    },
+    {
+      "category": "ai-learn-ai-tech",
+      "slug": "researched-nvidia-dli-generative-ai",
+      "name": "NVIDIA Deep Learning Institute Generative AI"
+    }
+  ]
+}
