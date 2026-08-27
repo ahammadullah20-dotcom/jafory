@@ -46,7 +46,7 @@ export const canonicalStorageImages: Record<string, string | null> = {
   "ibm-skillsbuild-ai-fundamentals": "/manus-storage/ai-ibm-ai-engineering_0e78203c.webp",
   "researched-ikea-365-food-container": "/manus-storage/home-ikea-365-container_1cf3524a.webp",
   "ikea-365-food-containers": "/manus-storage/home-ikea-365-container_1cf3524a.webp",
-  "ikea-365-pressure-cooker": "/manus-storage/expansion-42_6b548c74.webp",
+  "ikea-365-pressure-cooker": "/manus-storage/ikea-365-pressure-cooker_d71371f2.jpg",
   "researched-ikea-kallax-shelving": "/manus-storage/home-ikea-kallax_14011308.webp",
   "ikea-kallax-shelving": "/manus-storage/home-ikea-kallax_14011308.webp",
   "jbl-flip-6": "/manus-storage/expansion-47_c6c718b0.webp",
@@ -60,7 +60,7 @@ export const canonicalStorageImages: Record<string, string | null> = {
   "levis-501-original-jeans": "/manus-storage/expansion-40_8491dd37.webp",
   "levis-crocs-all-terrain": "/manus-storage/expansion-52_29a62fb9.webp",
   "listerine-cool-mint": "/manus-storage/daily-colgate-total_319ce66a.webp",
-  "logitech-mx-master-3s": "/manus-storage/expansion-39_5e57d4b3.webp",
+  "logitech-mx-master-3s": "/manus-storage/logitech-mx-master-3s_19a4971c.png",
   "researched-maybelline-sky-high": "/manus-storage/beauty-maybelline-sky-high_46cbde9a.webp",
   "maybelline-sky-high-mascara": "/manus-storage/beauty-maybelline-sky-high_46cbde9a.webp",
   "researched-azure-ai-fundamentals": "/manus-storage/azure-ai-fundamentals_1e697d1d.png",
@@ -94,15 +94,15 @@ export const canonicalStorageImages: Record<string, string | null> = {
   "researched-samsonite-c-lite-spinner": "/manus-storage/expansion-46_c551f339.webp",
   "researched-samsung-galaxy-a56-5g": "/manus-storage/electronics-samsung-a56_b98ab8c9.webp",
   "researched-samsung-galaxy-buds3-pro": "/manus-storage/electronics-galaxy-buds3-pro_0cc55b20.webp",
-  "samsung-galaxy-tab-s10-fe": "/manus-storage/expansion-51_9343e5ab.webp",
-  "samsung-galaxy-watch-8": "/manus-storage/expansion-41_569dec3a.webp",
-  "sony-wh-1000xm5": "/manus-storage/expansion-46_c551f339.webp",
+  "samsung-galaxy-tab-s10-fe": "/manus-storage/samsung-galaxy-tab-s10-fe_5b2b2b64.jpg",
+  "samsung-galaxy-watch-8": "/manus-storage/samsung-galaxy-watch8_5e728bda.jpg",
+  "sony-wh-1000xm5": "/manus-storage/sony-wh-1000xm5_de53ffb3.webp",
   "strmax-acrylic-display-case": "/manus-storage/jafory-home-acrylic-display-case_86923de9.webp",
   "researched-ordinary-niacinamide-zinc": "/manus-storage/beauty-ordinary-niacinamide_4235fda7.webp",
   "ordinary-niacinamide-zinc": "/manus-storage/beauty-ordinary-niacinamide_4235fda7.webp",
   "tichondrius-16a-wifi-smart-plug-4-pack": "/manus-storage/expansion-39_5e57d4b3.webp",
   "tide-hygienic-clean": "/manus-storage/expansion-09_1c55d035.webp",
-  "tp-link-archer-ax55": "/manus-storage/expansion-39_5e57d4b3.webp",
+  "tp-link-archer-ax55": "/manus-storage/tp-link-archer-ax55_eca8ecb0.png",
   "travel-cosmetic-organizer-pouch": "/manus-storage/jafory-beauty-hair-tools-bag_32d0c8d1.webp",
   "researched-tumi-alpha-3-carry-on": "/manus-storage/expansion-46_c551f339.webp",
   "ugreen-nexode-65w-3-port-gan-charger": "/manus-storage/electronics-ugreen-65w_056e2d29.webp",
@@ -120,7 +120,7 @@ export const canonicalStorageImages: Record<string, string | null> = {
 };
 
 /** Converts preserved package media while keeping durable correction assets at their exact uploaded paths. */
-const durableCorrectionMedia = new Set(["/manus-storage/azure-ai-fundamentals_1e697d1d.png", "/manus-storage/fastai-practical-deep-learning_b9e0d167.jpg", "/manus-storage/nvidia-generative-ai_5686ad5f.jpg", "/manus-storage/openai-academy_1e9683f3.png", "/manus-storage/nivea-creme-tin_9d97842e.jpg", "/manus-storage/oral-b-pro-3_3962f519.jpg", "/manus-storage/vaseline-petroleum-jelly_ef8d4e84.jpeg"]);
+const durableCorrectionMedia = new Set(["/manus-storage/azure-ai-fundamentals_1e697d1d.png", "/manus-storage/fastai-practical-deep-learning_b9e0d167.jpg", "/manus-storage/nvidia-generative-ai_5686ad5f.jpg", "/manus-storage/openai-academy_1e9683f3.png", "/manus-storage/nivea-creme-tin_9d97842e.jpg", "/manus-storage/oral-b-pro-3_3962f519.jpg", "/manus-storage/vaseline-petroleum-jelly_ef8d4e84.jpeg", "/manus-storage/logitech-mx-master-3s_19a4971c.png", "/manus-storage/sony-wh-1000xm5_de53ffb3.webp", "/manus-storage/tp-link-archer-ax55_eca8ecb0.png", "/manus-storage/ikea-365-pressure-cooker_d71371f2.jpg", "/manus-storage/samsung-galaxy-tab-s10-fe_5b2b2b64.jpg", "/manus-storage/samsung-galaxy-watch8_5e728bda.jpg"]);
 export const toNetlifyMediaPath = (value: string | null | undefined) => value?.startsWith("/manus-storage/") && !durableCorrectionMedia.has(value) ? value.replace("/manus-storage/", "/jafory-media/") : value ?? null;
 
 /** Rejects preview-only media while allowing durable Supabase Storage URLs set by protected administration. */

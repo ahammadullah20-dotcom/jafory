@@ -22,7 +22,7 @@ describe("Netlify-owned Jafory media", () => {
   it("includes every mapped product image and the Jafory logo in the public bundle", () => {
     const filenames = new Set(Object.values(canonicalStorageImages).filter((value): value is string => Boolean(value)).map(value => path.basename(toNetlifyMediaPath(value) ?? "")));
     expect(filenames.size).toBeGreaterThanOrEqual(50);
-    for (const filename of filenames) { if (["nivea-creme-tin_9d97842e.jpg", "oral-b-pro-3_3962f519.jpg", "vaseline-petroleum-jelly_ef8d4e84.jpeg", "azure-ai-fundamentals_1e697d1d.png", "fastai-practical-deep-learning_b9e0d167.jpg", "nvidia-generative-ai_5686ad5f.jpg", "openai-academy_1e9683f3.png"].includes(filename)) continue; expect(existsSync(path.join(publicDir, "jafory-media", filename))).toBe(true); }
+    for (const filename of filenames) { if (["nivea-creme-tin_9d97842e.jpg", "oral-b-pro-3_3962f519.jpg", "vaseline-petroleum-jelly_ef8d4e84.jpeg", "azure-ai-fundamentals_1e697d1d.png", "fastai-practical-deep-learning_b9e0d167.jpg", "nvidia-generative-ai_5686ad5f.jpg", "openai-academy_1e9683f3.png", "logitech-mx-master-3s_19a4971c.png", "sony-wh-1000xm5_de53ffb3.webp", "tp-link-archer-ax55_eca8ecb0.png", "ikea-365-pressure-cooker_d71371f2.jpg", "samsung-galaxy-tab-s10-fe_5b2b2b64.jpg", "samsung-galaxy-watch8_5e728bda.jpg"].includes(filename)) continue; expect(existsSync(path.join(publicDir, "jafory-media", filename))).toBe(true); }
     expect(existsSync(path.join(publicDir, "jafory-logo.webp"))).toBe(true);
   });
 
