@@ -1,0 +1,548 @@
+[
+  {
+    "image": "/jafory-media/jafory-fashion-kalidi-tote_aada0356.webp",
+    "count": 18,
+    "categories": [
+      ""
+    ],
+    "items": [
+      {
+        "slug": "adidas-samba-indoor",
+        "name": "adidas Samba Indoor Shoes",
+        "category": ""
+      },
+      {
+        "slug": "crocs-classic-clog",
+        "name": "Crocs Classic Clog",
+        "category": ""
+      },
+      {
+        "slug": "researched-herschel-little-america",
+        "name": "Herschel Little America Backpack",
+        "category": ""
+      },
+      {
+        "slug": "hgwssy-convertible-fashion-backpack-purse",
+        "name": "HGWSSY Convertible Fashion Backpack Purse",
+        "category": ""
+      },
+      {
+        "slug": "kalidi-corduroy-tote-crossbody",
+        "name": "KALIDI Corduroy Tote and Crossbody Bag",
+        "category": ""
+      },
+      {
+        "slug": "levis-501-original-jeans",
+        "name": "Levi’s 501 Original Jeans",
+        "category": ""
+      },
+      {
+        "slug": "levis-crocs-all-terrain",
+        "name": "Levi’s x Crocs All-Terrain Clog",
+        "category": ""
+      },
+      {
+        "slug": "nike-air-force-1-retro",
+        "name": "Nike Air Force 1 Retro Shoes",
+        "category": ""
+      },
+      {
+        "slug": "nike-calm-slide",
+        "name": "Nike Calm Slide Sandals",
+        "category": ""
+      },
+      {
+        "slug": "nike-reactx-rejuven8",
+        "name": "Nike ReactX Rejuven8 Shoes",
+        "category": ""
+      },
+      {
+        "slug": "researched-nike-revolution-7",
+        "name": "Nike Revolution 7",
+        "category": ""
+      },
+      {
+        "slug": "pealwel-mini-backpack-purse",
+        "name": "Pealwel Mini Nylon Backpack Purse",
+        "category": ""
+      },
+      {
+        "slug": "ray-ban-aviator-classic",
+        "name": "Ray-Ban Aviator Classic Sunglasses",
+        "category": ""
+      },
+      {
+        "slug": "researched-samsonite-c-lite-spinner",
+        "name": "Samsonite C-Lite Large Spinner",
+        "category": ""
+      },
+      {
+        "slug": "researched-tumi-alpha-3-carry-on",
+        "name": "TUMI Alpha 3 International Expandable Carry-On",
+        "category": ""
+      },
+      {
+        "slug": "uniqlo-round-mini-shoulder",
+        "name": "Uniqlo Round Mini Shoulder Bag",
+        "category": ""
+      },
+      {
+        "slug": "researched-uniqlo-round-mini-shoulder",
+        "name": "UNIQLO Round Mini Shoulder Bag",
+        "category": ""
+      },
+      {
+        "slug": "zara-fabric-shoulder-shopper",
+        "name": "Zara Fabric Shoulder Shopper Bag",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "image": "/jafory-media/daily-ariel-detergent_fe557788.webp",
+    "count": 16,
+    "categories": [
+      ""
+    ],
+    "items": [
+      {
+        "slug": "ariel-original-detergent",
+        "name": "Ariel Original Laundry Detergent",
+        "category": ""
+      },
+      {
+        "slug": "researched-ariel-ultra-concentrado",
+        "name": "Ariel Ultra Concentrado Laundry Detergent",
+        "category": ""
+      },
+      {
+        "slug": "researched-colgate-total-whitening",
+        "name": "Colgate Total Whitening Toothpaste",
+        "category": ""
+      },
+      {
+        "slug": "researched-dettol-antiseptic-liquid",
+        "name": "Dettol Antiseptic Liquid",
+        "category": ""
+      },
+      {
+        "slug": "dove-beauty-bar",
+        "name": "Dove Beauty Bar",
+        "category": ""
+      },
+      {
+        "slug": "researched-dove-deeply-nourishing-body-wash",
+        "name": "Dove Deeply Nourishing Body Wash",
+        "category": ""
+      },
+      {
+        "slug": "fairy-original-washing-up",
+        "name": "Fairy Original Washing-Up Liquid",
+        "category": ""
+      },
+      {
+        "slug": "finish-quantum-tablets",
+        "name": "Finish Quantum Dishwasher Tablets",
+        "category": ""
+      },
+      {
+        "slug": "head-shoulders-classic-clean",
+        "name": "Head & Shoulders Classic Clean Shampoo",
+        "category": ""
+      },
+      {
+        "slug": "kleenex-balsam-tissues",
+        "name": "Kleenex Balsam Tissues",
+        "category": ""
+      },
+      {
+        "slug": "listerine-cool-mint",
+        "name": "Listerine Cool Mint Mouthwash",
+        "category": ""
+      },
+      {
+        "slug": "nivea-creme-tin",
+        "name": "Nivea Creme Tin",
+        "category": ""
+      },
+      {
+        "slug": "researched-nivea-sun-spf50",
+        "name": "NIVEA Sun Protect & Moisture SPF50+",
+        "category": ""
+      },
+      {
+        "slug": "oral-b-pro-3",
+        "name": "Oral-B Pro-3 Electric Toothbrush",
+        "category": ""
+      },
+      {
+        "slug": "tide-hygienic-clean",
+        "name": "Tide Hygienic Clean Liquid Detergent",
+        "category": ""
+      },
+      {
+        "slug": "vaseline-petroleum-jelly",
+        "name": "Vaseline Petroleum Jelly",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "image": "/jafory-media/electronics-anker-737_4fb124c7.webp",
+    "count": 15,
+    "categories": [
+      ""
+    ],
+    "items": [
+      {
+        "slug": "researched-anker-737-power-bank",
+        "name": "Anker 737 Power Bank (PowerCore 24K)",
+        "category": ""
+      },
+      {
+        "slug": "anker-soundcore-bluetooth-speaker",
+        "name": "Anker Soundcore Bluetooth Speaker",
+        "category": ""
+      },
+      {
+        "slug": "anker-soundcore-life-q20",
+        "name": "Anker Soundcore Life Q20 Headphones",
+        "category": ""
+      },
+      {
+        "slug": "apple-airtag-4-pack",
+        "name": "Apple AirTag 4 Pack",
+        "category": ""
+      },
+      {
+        "slug": "apple-ipad-10th-gen",
+        "name": "Apple iPad 10th Generation",
+        "category": ""
+      },
+      {
+        "slug": "belkin-boostcharge-usb-c",
+        "name": "Belkin BoostCharge USB-C Charger",
+        "category": ""
+      },
+      {
+        "slug": "jbl-flip-6",
+        "name": "JBL Flip 6 Portable Bluetooth Speaker",
+        "category": ""
+      },
+      {
+        "slug": "jononser-magnetic-magsafe-car-mount",
+        "name": "Jononser Magnetic MagSafe Car Mount",
+        "category": ""
+      },
+      {
+        "slug": "lamicall-15w-magsafe-car-mount-charger",
+        "name": "Lamicall 15W MagSafe Car Mount Charger",
+        "category": ""
+      },
+      {
+        "slug": "logitech-mx-master-3s",
+        "name": "Logitech MX Master 3S Mouse",
+        "category": ""
+      },
+      {
+        "slug": "samsung-galaxy-tab-s10-fe",
+        "name": "Samsung Galaxy Tab S10 FE",
+        "category": ""
+      },
+      {
+        "slug": "samsung-galaxy-watch-8",
+        "name": "Samsung Galaxy Watch 8",
+        "category": ""
+      },
+      {
+        "slug": "sony-wh-1000xm5",
+        "name": "Sony WH-1000XM5 Wireless Headphones",
+        "category": ""
+      },
+      {
+        "slug": "tp-link-archer-ax55",
+        "name": "TP-Link Archer AX55 Wi-Fi Router",
+        "category": ""
+      },
+      {
+        "slug": "xiaomi-redmi-buds-6",
+        "name": "Xiaomi Redmi Buds 6",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "image": "/jafory-media/ai-google-essentials_4f03d2a4.webp",
+    "count": 13,
+    "categories": [
+      ""
+    ],
+    "items": [
+      {
+        "slug": "ai-for-everyone-andrew-ng",
+        "name": "AI For Everyone — Andrew Ng",
+        "category": ""
+      },
+      {
+        "slug": "researched-coursera-applied-ai",
+        "name": "Applied AI Professional Certificate",
+        "category": ""
+      },
+      {
+        "slug": "researched-aws-ai-ml-learning",
+        "name": "AWS AI and Machine Learning Learning Plan",
+        "category": ""
+      },
+      {
+        "slug": "researched-datacamp-generative-ai-concepts",
+        "name": "DataCamp Generative AI Concepts",
+        "category": ""
+      },
+      {
+        "slug": "researched-fastai-practical-deep-learning",
+        "name": "fast.ai Practical Deep Learning for Coders",
+        "category": ""
+      },
+      {
+        "slug": "researched-generative-ai-for-everyone",
+        "name": "Generative AI for Everyone",
+        "category": ""
+      },
+      {
+        "slug": "generative-ai-for-everyone-andrew-ng",
+        "name": "Generative AI for Everyone — Andrew Ng",
+        "category": ""
+      },
+      {
+        "slug": "google-ai-essentials-course",
+        "name": "Google AI Essentials",
+        "category": ""
+      },
+      {
+        "slug": "researched-google-ai-essentials",
+        "name": "Google AI Essentials",
+        "category": ""
+      },
+      {
+        "slug": "researched-google-cloud-generative-ai-path",
+        "name": "Google Cloud Generative AI Learning Path",
+        "category": ""
+      },
+      {
+        "slug": "researched-ibm-ai-engineering",
+        "name": "IBM AI Engineering Professional Certificate",
+        "category": ""
+      },
+      {
+        "slug": "researched-azure-ai-fundamentals",
+        "name": "Microsoft Azure AI Fundamentals",
+        "category": ""
+      },
+      {
+        "slug": "researched-nvidia-dli-generative-ai",
+        "name": "NVIDIA Deep Learning Institute Generative AI",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "image": "/jafory-media/beauty-cerave-cleanser_1bfd2c8b.webp",
+    "count": 13,
+    "categories": [
+      ""
+    ],
+    "items": [
+      {
+        "slug": "cerave-foaming-cleanser",
+        "name": "CeraVe Foaming Facial Cleanser",
+        "category": ""
+      },
+      {
+        "slug": "researched-cerave-hydrating-cleanser",
+        "name": "CeraVe Hydrating Facial Cleanser",
+        "category": ""
+      },
+      {
+        "slug": "cerave-moisturizing-cream",
+        "name": "CeraVe Moisturizing Cream",
+        "category": ""
+      },
+      {
+        "slug": "researched-lrp-anthelios-uvmune",
+        "name": "La Roche-Posay Anthelios UVMune 400 SPF50+",
+        "category": ""
+      },
+      {
+        "slug": "large-marble-hair-clips",
+        "name": "Large Marble-Style Hair Clips",
+        "category": ""
+      },
+      {
+        "slug": "researched-maybelline-sky-high",
+        "name": "Maybelline Lash Sensational Sky High Mascara",
+        "category": ""
+      },
+      {
+        "slug": "nivea-men-sensitive-kit",
+        "name": "Nivea Men Sensitive Shaving Kit",
+        "category": ""
+      },
+      {
+        "slug": "oral-b-io-electric-toothbrush",
+        "name": "Oral-B iO Series Electric Toothbrush",
+        "category": ""
+      },
+      {
+        "slug": "researched-philips-oneblade-360",
+        "name": "Philips Norelco OneBlade 360",
+        "category": ""
+      },
+      {
+        "slug": "portable-hair-tools-travel-bag",
+        "name": "Portable Hair Tools Travel Bag",
+        "category": ""
+      },
+      {
+        "slug": "researched-ordinary-niacinamide-zinc",
+        "name": "The Ordinary Niacinamide 10% + Zinc 1%",
+        "category": ""
+      },
+      {
+        "slug": "travel-cosmetic-organizer-pouch",
+        "name": "Travel Cosmetic Organizer Pouch",
+        "category": ""
+      },
+      {
+        "slug": "vaseline-advanced-repair",
+        "name": "Vaseline Intensive Care Advanced Repair Lotion",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "image": "/jafory-media/jafory-home-bayti-round-box_5c1a5ab9.webp",
+    "count": 12,
+    "categories": [
+      ""
+    ],
+    "items": [
+      {
+        "slug": "bayti-decorative-round-storage-box",
+        "name": "BAYTI Decorative Round Storage Box",
+        "category": ""
+      },
+      {
+        "slug": "dyson-v8-cordless-vacuum",
+        "name": "Dyson V8 Cordless Vacuum",
+        "category": ""
+      },
+      {
+        "slug": "researched-ikea-365-food-container",
+        "name": "IKEA 365+ Food Container with Lid",
+        "category": ""
+      },
+      {
+        "slug": "ikea-365-pressure-cooker",
+        "name": "IKEA 365+ Pressure Cooker",
+        "category": ""
+      },
+      {
+        "slug": "researched-ikea-kallax-shelving",
+        "name": "IKEA KALLAX Shelving Unit",
+        "category": ""
+      },
+      {
+        "slug": "ninja-foodi-10-in-1",
+        "name": "Ninja Foodi 10-in-1 Pressure Cooker",
+        "category": ""
+      },
+      {
+        "slug": "ninja-neverstick-cookware",
+        "name": "Ninja Foodi NeverStick Cookware Set",
+        "category": ""
+      },
+      {
+        "slug": "researched-ninja-foodi-power-blender",
+        "name": "Ninja SS351 Foodi Power Blender & Processor System",
+        "category": ""
+      },
+      {
+        "slug": "researched-philips-dual-basket-airfryer",
+        "name": "Philips 3000 Series Dual Basket Airfryer NA351/00",
+        "category": ""
+      },
+      {
+        "slug": "researched-philips-5000-rice-cooker",
+        "name": "Philips 5000 Series Digital Rice Cooker",
+        "category": ""
+      },
+      {
+        "slug": "tichondrius-16a-wifi-smart-plug-4-pack",
+        "name": "Tichondrius 16A WiFi Smart Plug (4 Pack)",
+        "category": ""
+      },
+      {
+        "slug": "ywleto-hanging-fruit-basket",
+        "name": "YWLETO Hanging Fruit Basket",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "image": "/jafory-media/daily-colgate-total_319ce66a.webp",
+    "count": 2,
+    "categories": [
+      ""
+    ],
+    "items": [
+      {
+        "slug": "colgate-plax-mouthwash",
+        "name": "Colgate Plax Mouthwash",
+        "category": ""
+      },
+      {
+        "slug": "colgate-total-whitening",
+        "name": "Colgate Total Whitening Toothpaste",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "image": "/jafory-media/daily-dove-body-wash_5a3780db.webp",
+    "count": 2,
+    "categories": [
+      ""
+    ],
+    "items": [
+      {
+        "slug": "dove-nourishing-body-wash",
+        "name": "Dove Deeply Nourishing Body Wash",
+        "category": ""
+      },
+      {
+        "slug": "dove-original-antiperspirant",
+        "name": "Dove Original Antiperspirant",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "image": "/jafory-media/electronics-ugreen-65w_056e2d29.webp",
+    "count": 2,
+    "categories": [
+      ""
+    ],
+    "items": [
+      {
+        "slug": "ugreen-nexode-65w-3-port-gan-charger",
+        "name": "UGREEN Nexode 65W 3-Port GaN Charger",
+        "category": ""
+      },
+      {
+        "slug": "researched-ugreen-nexode-air-65w",
+        "name": "UGREEN Nexode Air 65W USB-C Charger",
+        "category": ""
+      }
+    ]
+  }
+]

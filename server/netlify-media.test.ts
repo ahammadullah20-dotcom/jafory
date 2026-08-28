@@ -12,9 +12,11 @@ describe("Netlify-owned Jafory media", () => {
   beforeAll(() => {
     execFileSync("pnpm", ["build"], { cwd: "/home/ubuntu/jafory-affiliate-hub", stdio: "pipe" });
   });
-  it("normalizes every canonical product image into a package-owned public URL", () => {
+  it("keeps a complete canonical decision for every product while allowing an honest unverified-art fallback", () => {
     const urls = Object.values(canonicalStorageImages).filter((value): value is string => Boolean(value)).map(toNetlifyMediaPath);
-    expect(urls).toHaveLength(118);
+    expect(Object.keys(canonicalStorageImages)).toHaveLength(118);
+    expect(urls.length).toBeLessThan(118);
+    expect(urls.length).toBeGreaterThanOrEqual(70);
     expect(urls.every(url => url?.startsWith("/jafory-media/") || url?.startsWith("/manus-storage/"))).toBe(true);
     expect(urls.some(url => url?.includes("/manus-storage/"))).toBe(true);
   });
@@ -60,12 +62,24 @@ describe("Netlify-owned Jafory media", () => {
   });
 
   it("uses product-specific packaged media before category fallback art", () => {
-    expect(productImage({ slug: "nike-air-force-1-retro", image_url: null }, "fashion")).toBe("/jafory-media/expansion-50_e66d1a2d.webp");
+    expect(productImage({ slug: "adidas-samba-indoor", image_url: null }, "fashion")).toBe("/jafory-media/expansion-26_1a313228.webp");
     expect(productImage({ slug: "philips-dual-basket-airfryer", image_url: null }, "home-living")).toBe("/jafory-media/home-philips-dual-airfryer_4eb66c4b.webp");
     expect(productImage({ slug: "cerave-foaming-cleanser", image_url: null }, "beauty-wellness")).toBe("/jafory-media/beauty-cerave-cleanser_1bfd2c8b.webp");
     expect(productImage({ slug: "nivea-creme-tin", image_url: null }, "daily-essentials")).toBe("/manus-storage/nivea-creme-tin_9d97842e.jpg");
     expect(productImage({ slug: "researched-azure-ai-fundamentals", image_url: null }, "ai-learn-ai-tech")).toBe("/manus-storage/azure-ai-fundamentals_1e697d1d.png");
     expect(productImage({ slug: "unknown-product", image_url: null }, "electronics")).toBe("/jafory-media/electronics-anker-737_4fb124c7.webp");
+  });
+
+  it("does not substitute unrelated legacy imagery when a product visual is unverified", () => {
+    expect(canonicalStorageImages["fairy-original-washing-up"]).toBeNull();
+    expect(productImage({ slug: "fairy-original-washing-up", image_url: "/jafory-media/expansion-08_8d862cff.webp" }, "daily-essentials")).toBeNull();
+    expect(canonicalStorageImages["tichondrius-16a-wifi-smart-plug-4-pack"]).toBeNull();
+    expect(productImage({ slug: "tichondrius-16a-wifi-smart-plug-4-pack", image_url: "/jafory-media/expansion-39_5e57d4b3.webp" }, "home-living")).toBeNull();
+  });
+
+  it("does not reuse a non-null canonical visual across different listings", () => {
+    const mappedUrls = Object.values(canonicalStorageImages).filter((value): value is string => Boolean(value));
+    expect(new Set(mappedUrls).size).toBe(mappedUrls.length);
   });
 
   it("builds a directly uploaded Netlify Drop source package rather than searching for a nested archive", () => {

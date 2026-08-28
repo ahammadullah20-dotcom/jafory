@@ -12,8 +12,10 @@ const fallbackMediaByCategorySlug: Record<string, string> = {
   "ai-learn-ai-tech": "/jafory-media/ai-google-essentials_4f03d2a4.webp",
 };
 export const productImage = (row: any, categorySlug?: string) => {
-  const canonical = toNetlifyMediaPath(canonicalStorageImages[row.slug]);
-  if (isCategorySafeMedia(canonical)) return canonical;
+  if (Object.prototype.hasOwnProperty.call(canonicalStorageImages, row.slug)) {
+    const canonical = toNetlifyMediaPath(canonicalStorageImages[row.slug]);
+    return isCategorySafeMedia(canonical) ? canonical : null;
+  }
   const editable = safePublicMediaUrl(row.image_url);
   if (isCategorySafeMedia(editable)) return editable;
   return categorySlug ? fallbackMediaByCategorySlug[categorySlug] ?? null : null;
