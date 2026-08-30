@@ -1,5 +1,6 @@
 import { type FormEvent, useState } from "react";
 import { ImagePlus, Plus, Upload, Video } from "lucide-react";
+import { toast } from "sonner";
 import { supabase } from "@/lib/supabase";
 import { trpc } from "@/lib/trpc";
 
@@ -52,7 +53,7 @@ export default function AdminProductManager() {
   const [editing, setEditing] = useState<string | undefined>();
   const [editorOpen, setEditorOpen] = useState(false);
   const products = trpc.admin.products.list.useQuery({ categoryId: categoryId || undefined, search: search || undefined });
-  const save = trpc.admin.products.save.useMutation({ onSuccess: () => { utils.admin.products.list.invalidate(); utils.admin.overview.invalidate(); setEditorOpen(false); setEditing(undefined); setDraft(blankDraft); } });
+  const save = trpc.admin.products.save.useMutation({ onSuccess: () => { toast.success("Product saved successfully."); utils.admin.products.list.invalidate(); utils.admin.overview.invalidate(); setEditorOpen(false); setEditing(undefined); setDraft(blankDraft); }, onError: error => { toast.error(error.message || "Product could not be saved."); } });
   const remove = trpc.admin.products.delete.useMutation({ onSuccess: () => { utils.admin.products.list.invalidate(); utils.admin.overview.invalidate(); } });
   const set = (key: keyof ProductDraft, value: string) => setDraft(previous => ({ ...previous, [key]: value }));
   const openEditor = (item?: any) => {

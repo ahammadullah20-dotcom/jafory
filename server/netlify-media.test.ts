@@ -70,6 +70,22 @@ describe("Netlify-owned Jafory media", () => {
     expect(productImage({ slug: "unknown-product", image_url: null }, "electronics")).toBe("/jafory-media/electronics-anker-737_4fb124c7.webp");
   });
 
+  it("surfaces an admin-uploaded image when a canonical product has no packaged visual", () => {
+    const uploaded = "https://bsnujdoiikafnlaareye.supabase.co/storage/v1/object/public/jafory-media/uploads/products/apple-ipad-10th-gen/ipad.png";
+    expect(productImage({ slug: "apple-ipad-10th-gen", image_url: null }, "electronics", [uploaded])).toBe(uploaded);
+    expect(productImage({ slug: "apple-ipad-10th-gen", image_url: uploaded }, "electronics")).toBe(uploaded);
+    expect(productImage({ slug: "apple-ipad-10th-gen", image_url: "/jafory-media/legacy-unverified.webp" }, "electronics")).toBeNull();
+  });
+
+  it("keeps the public detail path wired to uploaded media and explicit admin save feedback", () => {
+    const catalog = readFileSync("/home/ubuntu/jafory-affiliate-hub/server/supabaseCatalog.ts", "utf8");
+    const adminProducts = readFileSync("/home/ubuntu/jafory-affiliate-hub/client/src/components/AdminProductManager.tsx", "utf8");
+    expect(catalog).toContain("readProductMediaMap");
+    expect(catalog).toContain("mapProduct(productRow, category.slug, media.images)");
+    expect(adminProducts).toContain('toast.success("Product saved successfully.")');
+    expect(adminProducts).toContain('toast.error(error.message || "Product could not be saved.")');
+  });
+
   it("does not substitute unrelated legacy imagery when a product visual is unverified", () => {
     expect(canonicalStorageImages["fairy-original-washing-up"]).toBeNull();
     expect(productImage({ slug: "fairy-original-washing-up", image_url: "/jafory-media/expansion-08_8d862cff.webp" }, "daily-essentials")).toBeNull();
