@@ -45,7 +45,7 @@ describe("Netlify-owned Jafory media", () => {
   });
 
   it("guards the public home payload against oversized editable values", () => {
-    const supabaseCatalog = readFileSync("/home/ubuntu/jafory-affiliate-hub/server/supabaseCatalog.ts", "utf8");
+    const supabaseCatalog = readFileSync(path.join(projectRoot, "server/supabaseCatalog.ts"), "utf8");
     expect(supabaseCatalog).toContain("compactPublicSetting");
     expect(supabaseCatalog).toContain("20_000");
     const representative = {
@@ -56,7 +56,7 @@ describe("Netlify-owned Jafory media", () => {
   });
 
   it("includes a deployed-runtime payload verifier for the actual configured adapter", () => {
-    const verifier = readFileSync("/home/ubuntu/jafory-affiliate-hub/scripts/check-public-payload.mjs", "utf8");
+    const verifier = readFileSync(path.join(projectRoot, "scripts/check-public-payload.mjs"), "utf8");
     expect(verifier).toContain("await supabaseHome()");
     expect(verifier).toContain("PUBLIC_CATALOGUE_PAYLOAD_BYTES");
     expect(verifier).toContain("5_500_000");
@@ -73,6 +73,8 @@ describe("Netlify-owned Jafory media", () => {
 
   it("surfaces an admin-uploaded image when a canonical product has no packaged visual", () => {
     const uploaded = "https://bsnujdoiikafnlaareye.supabase.co/storage/v1/object/public/jafory-media/uploads/products/apple-ipad-10th-gen/ipad.png";
+    const cookerUpload = "https://bsnujdoiikafnlaareye.supabase.co/storage/v1/object/public/jafory-media/uploads/products/ikea-365-pressure-cooker/cooker.jpg";
+    expect(productImage({ slug: "ikea-365-pressure-cooker", image_url: null }, "home-living", [cookerUpload])).toBe(cookerUpload);
     const original = canonicalStorageImages["apple-ipad-10th-gen"];
     canonicalStorageImages["apple-ipad-10th-gen"] = null;
     try {

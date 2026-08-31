@@ -16,11 +16,13 @@ const publicUploadedMedia = (values: unknown[]) => values.map(safePublicMediaUrl
 export const productImage = (row: any, categorySlug?: string, uploadedImages: unknown[] = []) => {
   const hasCanonicalDecision = Object.prototype.hasOwnProperty.call(canonicalStorageImages, row.slug);
   const canonicalValue = hasCanonicalDecision ? toNetlifyMediaPath(canonicalStorageImages[row.slug]) : null;
-  if (canonicalValue && isCategorySafeMedia(canonicalValue)) return canonicalValue;
+  // Product-specific uploads are the most current source of truth and must win over
+  // legacy/static paths, which may resolve to the SPA fallback instead of an image.
+  const uploaded = publicUploadedMedia(uploadedImages).find(url => isEditablePublicMedia(url));
+  if (uploaded) return uploaded;
   const editable = safePublicMediaUrl(row.image_url);
   if (editable && (hasCanonicalDecision ? isEditablePublicMedia(editable) : isCategorySafeMedia(editable))) return editable;
-  const uploaded = publicUploadedMedia(uploadedImages).find(url => hasCanonicalDecision ? isEditablePublicMedia(url) : isCategorySafeMedia(url));
-  if (uploaded) return uploaded;
+  if (canonicalValue && isCategorySafeMedia(canonicalValue)) return canonicalValue;
   if (hasCanonicalDecision) return null;
   return categorySlug ? fallbackMediaByCategorySlug[categorySlug] ?? null : null;
 };
