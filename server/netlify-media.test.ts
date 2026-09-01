@@ -66,7 +66,7 @@ describe("Netlify-owned Jafory media", () => {
     expect(productImage({ slug: "adidas-samba-indoor", image_url: null }, "fashion")).toBe("/jafory-media/expansion-26_1a313228.webp");
     expect(productImage({ slug: "philips-dual-basket-airfryer", image_url: null }, "home-living")).toBe("/jafory-media/home-philips-dual-airfryer_4eb66c4b.webp");
     expect(productImage({ slug: "cerave-foaming-cleanser", image_url: null }, "beauty-wellness")).toBe("/jafory-media/beauty-cerave-cleanser_1bfd2c8b.webp");
-    expect(productImage({ slug: "nivea-creme-tin", image_url: null }, "daily-essentials")).toBe("/manus-storage/nivea-creme-tin_9d97842e.jpg");
+    expect(productImage({ slug: "nivea-creme-tin", image_url: null }, "daily-essentials")).toBe("/jafory-media/41-real/nivea-creme-tin.jpg");
     expect(productImage({ slug: "researched-azure-ai-fundamentals", image_url: null }, "ai-learn-ai-tech")).toBe("/manus-storage/azure-ai-fundamentals_1e697d1d.png");
     expect(productImage({ slug: "unknown-product", image_url: null }, "electronics")).toBe("/jafory-media/electronics-anker-737_4fb124c7.webp");
   });
@@ -89,10 +89,19 @@ describe("Netlify-owned Jafory media", () => {
   it("keeps the public detail path wired to uploaded media and explicit admin save feedback", () => {
     const catalog = readFileSync(path.join(projectRoot, "server/supabaseCatalog.ts"), "utf8");
     const adminProducts = readFileSync(path.join(projectRoot, "client/src/components/AdminProductManager.tsx"), "utf8");
+    const main = readFileSync(path.join(projectRoot, "client/src/main.tsx"), "utf8");
+    const information = readFileSync(path.join(projectRoot, "client/src/pages/InformationPage.tsx"), "utf8");
     expect(catalog).toContain("readProductMediaMap");
     expect(catalog).toContain("mapProduct(productRow, category.slug, media.images)");
     expect(adminProducts).toContain('toast.success("Product saved successfully.")');
     expect(adminProducts).toContain('toast.error(error.message || "Product could not be saved.")');
+    expect(adminProducts).toContain('toast.success("Image saved successfully.")');
+    expect(adminProducts).toContain("utils.catalog.home.invalidate()");
+    expect(adminProducts).toContain("utils.catalog.category.invalidate()");
+    expect(adminProducts).toContain("utils.catalog.product.invalidate()");
+    expect(main).toContain('import { Toaster } from "sonner";');
+    expect(main).toContain("<Toaster position=\"top-center\" richColors closeButton />");
+    expect(information).toContain("As an Amazon Associate I earn from qualifying purchases.");
   });
 
   it("does not substitute unrelated legacy imagery when a product visual is unverified", () => {

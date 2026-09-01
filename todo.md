@@ -3811,3 +3811,19 @@
 - [x] Audit the 118 imported products for repeated image URLs/assets and distinguish genuine product media from category fallback artwork.
 - [x] Replace repeated fallback imagery with product-specific verified media or an explicitly distinct safe visual treatment without fabricating reviews or changing product counts.
 - [x] Add regression coverage that detects unintended repeated product image mappings.
+
+- [x] Mount the Sonner Toaster at the application root so product/media Save success and error feedback is visible.
+- [x] Prioritize valid admin-uploaded product media over packaged canonical artwork and invalidate public catalogue queries after media commit.
+- [x] Add regression coverage for Toaster mounting, public catalogue invalidation, and uploaded media precedence.
+- [ ] Owner-approved publish and live verification of the Save feedback and uploaded-image storefront propagation fix.
+
+- [x] Perform a complete live and local affiliate-readiness audit of product descriptions, imagery, policies, disclosures, SEO, navigation, and technical behavior.
+- [x] Cross-check all 118 catalogue descriptions and product metadata for genuine, product-specific copy and prohibited fabricated reviews/ratings.
+- [x] Compare Jafory’s current readiness against current affiliate-program application expectations and document blockers with sources.
+- [x] Deliver an evidence-based apply-now / fix-first verdict without publishing changes unless explicitly approved.
+
+- [x] Apply the owner-approved affiliate-readiness fixes: exact Amazon disclosure, initial affiliate-link readiness copy, generic short-description improvements, duplicate product identity cleanup, and editorial trust signals.
+- [x] Read-only verify the configured Supabase catalogue, product descriptions, image/media settings, affiliate links, review statuses, and duplicate identities before making changes.
+- [x] Preserve all catalogue rows and user data; do not delete or fabricate products, reviews, ratings, or affiliate performance.
+- [x] Run full tests, TypeScript, production build, sitemap/SEO checks, and public API checks after the fixes.
+- [ ] Push only the verified source to the authorized GitHub repository and verify the resulting deployment state.

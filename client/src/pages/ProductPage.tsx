@@ -27,7 +27,7 @@ export default function ProductPage() {
   const [body, setBody] = useState("");
   const createReview = trpc.review.create.useMutation({ onSuccess: () => { setTitle(""); setBody(""); } });
   const data = detail.data;
-  const primaryImageUrl = data?.media?.images?.[0] ?? data?.product?.imageUrl ?? null;
+  const primaryImageUrl = (data && "media" in data ? data.media.images?.[0] : undefined) ?? data?.product?.imageUrl ?? null;
 
   if (!data && !detail.isLoading) return <StorefrontLayout categories={shell.data?.categories ?? []} socialLinks={shell.data?.socialLinks ?? []} settings={shell.data?.settings ?? []}><div className="not-found-stage">This Jafory product is not available.</div></StorefrontLayout>;
   const product = data?.product;

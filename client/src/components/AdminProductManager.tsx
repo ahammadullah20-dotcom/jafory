@@ -22,7 +22,7 @@ function MediaControls({ productId, onPrimaryImage }: { productId: string; onPri
   const utils = trpc.useUtils();
   const media = trpc.admin.media.list.useQuery({ productId });
   const createUpload = trpc.admin.media.createUpload.useMutation();
-  const commitUpload = trpc.admin.media.commitUpload.useMutation({ onSuccess: () => utils.admin.media.list.invalidate({ productId }) });
+  const commitUpload = trpc.admin.media.commitUpload.useMutation({ onSuccess: () => { toast.success("Image saved successfully."); utils.admin.media.list.invalidate({ productId }); utils.catalog.home.invalidate(); utils.catalog.category.invalidate(); utils.catalog.product.invalidate(); }, onError: error => { toast.error(error.message || "Image could not be saved."); } });
   const remove = trpc.admin.media.remove.useMutation({ onSuccess: () => utils.admin.media.list.invalidate({ productId }) });
   const [status, setStatus] = useState("");
   const upload = async (file: File) => {

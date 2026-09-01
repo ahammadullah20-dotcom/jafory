@@ -5,6 +5,7 @@ import { createRoot } from "react-dom/client";
 import superjson from "superjson";
 import App from "./App";
 import ErrorBoundary from "./components/ErrorBoundary";
+import { Toaster } from "sonner";
 import { supabase } from "./lib/supabase";
 import "./index.css";
 
@@ -17,4 +18,4 @@ const trpcClient = trpc.createClient({
   links: [httpBatchLink({ url: "/api/trpc", transformer: superjson, async headers() { const { data } = await supabase.auth.getSession(); return data.session?.access_token ? { Authorization: `Bearer ${data.session.access_token}`, "X-Supabase-Access-Token": data.session.access_token } : {}; }, fetch(input, init) { return globalThis.fetch(input, { ...(init ?? {}), credentials: "include" }); } })],
 });
 
-createRoot(document.getElementById("root")!).render(<ErrorBoundary><trpc.Provider client={trpcClient} queryClient={queryClient}><QueryClientProvider client={queryClient}><App /></QueryClientProvider></trpc.Provider></ErrorBoundary>);
+createRoot(document.getElementById("root")!).render(<ErrorBoundary><trpc.Provider client={trpcClient} queryClient={queryClient}><QueryClientProvider client={queryClient}><App /></QueryClientProvider></trpc.Provider><Toaster position="top-center" richColors closeButton /></ErrorBoundary>);
