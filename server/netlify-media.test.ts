@@ -27,6 +27,7 @@ describe("Netlify-owned Jafory media", () => {
     expect(filenames.size).toBeGreaterThanOrEqual(50);
     for (const value of Object.values(canonicalStorageImages).filter((item): item is string => Boolean(item))) { const mediaPath = toNetlifyMediaPath(value); if (!mediaPath || !mediaPath.startsWith("/jafory-media/")) continue; const relativePath = mediaPath.slice(1); if (["jafory-media/nivea-creme-tin_9d97842e.jpg", "jafory-media/oral-b-pro-3_3962f519.jpg", "jafory-media/vaseline-petroleum-jelly_ef8d4e84.jpeg", "jafory-media/azure-ai-fundamentals_1e697d1d.png", "jafory-media/fastai-practical-deep-learning_b9e0d167.jpg", "jafory-media/nvidia-generative-ai_5686ad5f.jpg", "jafory-media/openai-academy_1e9683f3.png", "jafory-media/logitech-mx-master-3s_19a4971c.png", "jafory-media/sony-wh-1000xm5_de53ffb3.webp", "jafory-media/tp-link-archer-ax55_eca8ecb0.png", "jafory-media/ikea-365-pressure-cooker_d71371f2.jpg", "jafory-media/samsung-galaxy-tab-s10-fe_5b2b2b64.jpg", "jafory-media/samsung-galaxy-watch8_5e728bda.jpg"].includes(relativePath)) continue; expect(existsSync(path.join(publicDir, relativePath))).toBe(true); }
     expect(existsSync(path.join(publicDir, "jafory-logo.webp"))).toBe(true);
+    expect(existsSync(path.join(publicDir, "jafory-media/41-real/google-ai-essentials-jafory-guide.svg"))).toBe(true);
   });
 
   it("uses the package-owned logo in both public navigation locations", () => {
@@ -68,6 +69,7 @@ describe("Netlify-owned Jafory media", () => {
     expect(productImage({ slug: "cerave-foaming-cleanser", image_url: null }, "beauty-wellness")).toBe("/jafory-media/beauty-cerave-cleanser_1bfd2c8b.webp");
     expect(productImage({ slug: "nivea-creme-tin", image_url: null }, "daily-essentials")).toBe("/jafory-media/41-real/nivea-creme-tin.jpg");
     expect(productImage({ slug: "researched-azure-ai-fundamentals", image_url: null }, "ai-learn-ai-tech")).toBe("/manus-storage/azure-ai-fundamentals_1e697d1d.png");
+    expect(productImage({ slug: "researched-google-ai-essentials", image_url: null }, "ai-learn-ai-tech")).toBe("/jafory-media/41-real/google-ai-essentials-jafory-guide.svg");
     expect(productImage({ slug: "unknown-product", image_url: null }, "electronics")).toBe("/jafory-media/electronics-anker-737_4fb124c7.webp");
   });
 
@@ -101,7 +103,7 @@ describe("Netlify-owned Jafory media", () => {
     expect(adminProducts).toContain("utils.catalog.product.invalidate()");
     expect(main).toContain('import { Toaster } from "sonner";');
     expect(main).toContain("<Toaster position=\"top-center\" richColors closeButton />");
-    expect(information).toContain("As an Amazon Associate I earn from qualifying purchases.");
+    expect(information).toContain("If Jafory uses Amazon Associates links, the following statement applies: As an Amazon Associate I earn from qualifying purchases.");
   });
 
   it("does not substitute unrelated legacy imagery when a product visual is unverified", () => {

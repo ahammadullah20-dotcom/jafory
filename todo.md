@@ -3826,4 +3826,16 @@
 - [x] Read-only verify the configured Supabase catalogue, product descriptions, image/media settings, affiliate links, review statuses, and duplicate identities before making changes.
 - [x] Preserve all catalogue rows and user data; do not delete or fabricate products, reviews, ratings, or affiliate performance.
 - [x] Run full tests, TypeScript, production build, sitemap/SEO checks, and public API checks after the fixes.
-- [ ] Push only the verified source to the authorized GitHub repository and verify the resulting deployment state.
+- [x] Push only the verified source to the authorized GitHub repository and verify the resulting deployment state.
+- [ ] Confirm that the connected Netlify site consumes GitHub commit a35e834 and refreshes the live disclosure/product bundle.
+
+- [x] Verify the current live Netlify site after GitHub commit a35e834, including disclosure, product content/media, public routes, and browser runtime behavior.
+- [x] Compare live deployment markers with the pushed source and document any stale-build or wrong-branch condition.
+- [ ] Correct the live Google AI Essentials research-guide image mapping if the current Agent Certification Path visual is not product-specific, then re-test and push only after verification.
+
+- [ ] Do not push again until the full release-blocker checklist is verified.
+- [ ] Audit every live product image mapping for product-name relevance, starting with Google AI Essentials and all researched/course listings.
+- [ ] Rewrite the affiliate disclosure sentence into clear, grammatically correct conditional language while retaining the required Amazon Associates statement.
+- [ ] Verify and report retailer/affiliate-link configuration coverage before release; do not invent or fabricate affiliate URLs.
+- [ ] Re-run full tests, build, Supabase read-only audit, and live checks after all blocker fixes.
+- [ ] Push only after the user-facing release checklist is fully green and verify the live deployment commit.

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Google AI Essentials — Jafory research guide</title>
+  <desc id="desc">An original editorial cover illustration for Jafory's guide to Google AI Essentials.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b2942"/><stop offset="1" stop-color="#116b72"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#e9c45d"/><stop offset="1" stop-color="#f5e3a0"/></linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="28" fill="url(#bg)"/>
+  <circle cx="650" cy="124" r="150" fill="#ffffff" opacity=".08"/>
+  <circle cx="650" cy="124" r="92" fill="none" stroke="#e9c45d" stroke-width="2" opacity=".65"/>
+  <path d="M564 124h172M650 38v172" stroke="#e9c45d" stroke-width="2" opacity=".35"/>
+  <rect x="74" y="78" width="126" height="34" rx="17" fill="#e9c45d"/>
+  <text x="137" y="101" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2" fill="#0b2942">JAFORY GUIDE</text>
+  <text x="74" y="230" font-family="Georgia, serif" font-size="52" fill="#ffffff">Google AI</text>
+  <text x="74" y="290" font-family="Georgia, serif" font-size="52" fill="#ffffff">Essentials</text>
+  <rect x="74" y="330" width="340" height="4" fill="url(#gold)"/>
+  <text x="74" y="378" font-family="Arial, sans-serif" font-size="22" fill="#d9edf0">Beginner guide to practical</text>
+  <text x="74" y="410" font-family="Arial, sans-serif" font-size="22" fill="#d9edf0">generative AI skills and responsible use</text>
+  <g transform="translate(566 278)">
+    <rect width="168" height="168" rx="28" fill="#ffffff" opacity=".96"/>
+    <path d="M84 32l17 35 39 5-29 27 8 39-35-19-35 19 8-39-29-27 39-5z" fill="none" stroke="#0b5561" stroke-width="8" stroke-linejoin="round"/>
+    <circle cx="84" cy="84" r="7" fill="#e9c45d"/>
+  </g>
+  <text x="74" y="520" font-family="Arial, sans-serif" font-size="16" letter-spacing="1.5" fill="#b7d8dc">DISCOVER · COMPARE · CHOOSE SMARTER</text>
+</svg>

@@ -37,7 +37,7 @@ export const canonicalStorageImages: Record<string, string | null> = {
   "generative-ai-for-everyone-andrew-ng": "/manus-storage/expansion-12_79a411af.webp",
   "gillette-fusion5-razor": "/jafory-media/41-real/gillette-fusion5-razor.webp",
   "google-ai-essentials-course": "/manus-storage/ai-google-essentials_4f03d2a4.webp",
-  "researched-google-ai-essentials": "/manus-storage/expansion-04_b9a22fc1.webp",
+  "researched-google-ai-essentials": "/jafory-media/41-real/google-ai-essentials-jafory-guide.svg",
   "researched-google-cloud-generative-ai-path": "/jafory-media/41-real/researched-google-cloud-generative-ai-path.webp",
   "head-shoulders-classic-clean": "/jafory-media/41-real/head-shoulders-classic-clean.webp",
   "researched-herschel-little-america": "/jafory-media/41-real/researched-herschel-little-america.webp",
